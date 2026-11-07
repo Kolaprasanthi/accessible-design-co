@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Accessible Design Co. creates thoughtful, inclusive digital experiences for everyone.">
+  <title>Accessible Design Co. — Design for everyone</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Accessible Design Co. home">
+        <span class="brand-mark" aria-hidden="true">a<span>.</span></span>
+        <span class="brand-name">accessible<span>design co.</span></span>
+      </a>
+      <nav class="primary-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> A more welcoming web starts here</p>
+        <h1 id="hero-title">Good design<br>is for <em>everyone.</em></h1>
+        <p class="hero-intro">We make digital experiences clear, inclusive, and a joy to use—so more people can take part.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#services">Explore what we do <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#about">Get to know us</a>
+        </div>
+        <div class="hero-note"><span class="note-icon" aria-hidden="true">✳</span><span>Thoughtful by design.<br><strong>Accessible by default.</strong></span></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Abstract illustration of colorful shapes coming together to form a welcoming arch">
+        <div class="art-sun"></div><div class="art-arch"><div class="art-inner"></div></div>
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <span class="art-star star-one" aria-hidden="true">✳</span><span class="art-star star-two" aria-hidden="true">✦</span>
+        <div class="art-caption"><span class="caption-dot"></span> Made for real life</div>
+      </div>
+      <div class="hero-bottom"><span>Independent design studio</span><span>People first · Always</span></div>
+    </section>
+
+    <section class="about-section section-shell" id="about" aria-labelledby="about-title">
+      <div class="section-kicker">01 / Who we are</div>
+      <div class="about-grid">
+        <h2 id="about-title">The web works<br><em>better together.</em></h2>
+        <div class="about-copy">
+          <p>Accessible Design Co. is an independent creative studio on a mission to make the online world work for more people. We bring accessibility into the process from the very first sketch.</p>
+          <a class="text-link" href="#contact">A little more about us <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="values-row" aria-label="Our values">
+        <article class="value-card"><span class="value-number">01</span><h3>Start with people</h3><p>We listen to the people who use what we make.</p></article>
+        <article class="value-card"><span class="value-number">02</span><h3>Make room for all</h3><p>Different ways of seeing make better ideas.</p></article>
+        <article class="value-card"><span class="value-number">03</span><h3>Keep learning</h3><p>Small improvements add up to lasting change.</p></article>
+      </div>
+    </section>
+
+    <section class="services-section" id="services" aria-labelledby="services-title">
+      <div class="section-shell">
+        <div class="section-kicker">02 / What we do</div>
+        <div class="services-heading"><div><h2 id="services-title">Good ideas, <em>made usable.</em></h2><p>From the first conversation to the final detail, we help you make experiences everyone can use.</p></div><span class="services-spark" aria-hidden="true">✳</span></div>
+        <div class="service-grid">
+          <article class="service-card"><div class="service-icon icon-lilac" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="5" y="6" width="22" height="20" rx="3"/><path d="M5 12h22M12 12v14M10 9h.01M14 9h.01"/></svg></div><span class="card-index">01</span><h3>Inclusive web design</h3><p>Clear, considered interfaces that feel intuitive for a wider range of people.</p><a href="#contact" class="card-link" aria-label="Ask us about inclusive web design">Learn more <span aria-hidden="true">↗</span></a></article>
+          <article class="service-card"><div class="service-icon icon-peach" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 5 27 11v10l-11 6-11-6V11l11-6Z"/><path d="m5 11 11 6 11-6M16 17v10M10 8l11 6"/></svg></div><span class="card-index">02</span><h3>Accessibility reviews</h3><p>Practical guidance to spot barriers and make your site easier to navigate.</p><a href="#contact" class="card-link" aria-label="Ask us about accessibility reviews">Learn more <span aria-hidden="true">↗</span></a></article>
+          <article class="service-card"><div class="service-icon icon-mint" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="5"/><path d="M16 2v3M16 27v3M2 16h3M27 16h3"/></svg></div><span class="card-index">03</span><h3>Team workshops</h3><p>Friendly, hands-on sessions that help inclusive thinking become second nature.</p><a href="#contact" class="card-link" aria-label="Ask us about team workshops">Learn more <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-shell" id="contact" aria-labelledby="contact-title">
+      <div class="contact-intro"><div class="section-kicker">03 / Say hello</div><h2 id="contact-title">Let’s make<br><em>something matter.</em></h2><p>Have a project, a question, or just want to talk about inclusive design? We’d love to hear from you.</p><a href="mailto:hello@accessibledesign.co" class="email-link">hello@accessibledesign.co <span aria-hidden="true">↗</span></a></div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="field"><label for="name">Your name <span aria-hidden="true">*</span></label><input id="name" name="name" autocomplete="name" required aria-describedby="name-hint name-error"><small id="name-hint">What should we call you?</small><span class="field-error" id="name-error"></span></div>
+          <div class="field"><label for="email">Email address <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-hint email-error"><small id="email-hint">We’ll only use this to reply.</small><span class="field-error" id="email-error"></span></div>
+        </div>
+        <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" aria-describedby="subject-hint"><small id="subject-hint">A few words about what you have in mind.</small></div>
+        <div class="field"><label for="message">Your message <span aria-hidden="true">*</span></label><textarea id="message" name="message" rows="4" required aria-describedby="message-hint message-error"></textarea><small id="message-hint">Share as much or as little as you like.</small><span class="field-error" id="message-error"></span></div>
+        <button class="button button-primary submit-button" type="submit">Send your message <span aria-hidden="true">→</span></button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite" tabindex="-1"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main section-shell">
+      <a class="brand footer-brand" href="#home" aria-label="Accessible Design Co. home"><span class="brand-mark" aria-hidden="true">a<span>.</span></span><span class="brand-name">accessible<span>design co.</span></span></a>
+      <p>Making the digital world<br>a little more welcoming.</p>
+      <div class="footer-links"><h2>Find us around</h2><a href="https://www.linkedin.com/" aria-label="LinkedIn (opens in a new tab)" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://www.instagram.com/" aria-label="Instagram (opens in a new tab)" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div>
+      <address><a href="mailto:hello@accessibledesign.co">hello@accessibledesign.co</a><br>Working everywhere, together.</address>
+    </div>
+    <div class="footer-bottom section-shell"><span>© <span id="year">2026</span> Accessible Design Co.</span><a href="#home">Back to top ↑</a><span>Designed with everyone in mind.</span></div>
+  </footer>
+</body>
+</html>
